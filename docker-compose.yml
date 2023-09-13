@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  shiori:
+    container_name: shiori
+    image: radhifadlillah/shiori
+    volumes:
+      - /data/shiori:/srv/shiori
+    ports:
+      - 5078:8080
+    restart: always
